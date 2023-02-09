@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dynamic Web Project</title>
+</head>
+<body>
+	
+	<form>
+	Enter First Number: <input type="text" name="num1"><br>
+	Enter Second NUmber: <input type="text" name="num2"><br>
+	
+	<input type="submit">
+	
+	</form>
+
+</body>
+</html>

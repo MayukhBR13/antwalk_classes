@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;day7Assignment.FlatMap&apos; to &apos;FlatMapProduct&apos;&#x0D;&#x0A;- Original project: &apos;HelloWorldProject&apos;&#x0D;&#x0A;- Original element: &apos;day7Assignment.FlatMap&apos;&#x0D;&#x0A;- Renamed element: &apos;day7Assignment.FlatMapProduct&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FlatMap&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;day7Assignment{FlatMap.java[FlatMap" matchStrategy="1" name="FlatMapProduct" qualified="false" references="true" similarDeclarations="false" stamp="1675060341835" textual="false" version="1.0"/>
+</session>

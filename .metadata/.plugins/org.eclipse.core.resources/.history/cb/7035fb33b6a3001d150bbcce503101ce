@@ -1,0 +1,15 @@
+package recap;
+
+import java.util.function.BiFunction;
+import java.util.function.Function;
+
+public class ex1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BiFunction<Double,Double,Double> pow=(x,y)->(double)Math.pow(x,y);
+		System.out.println(pow.apply(10.0,3.0));
+		
+	}
+
+}

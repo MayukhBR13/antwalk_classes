@@ -1,0 +1,24 @@
+package com.demo;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class sqrServlet extends HttpServlet{
+
+	public void doPost(HttpServletRequest req,HttpServletResponse res) throws IOException, ServletException {
+		
+		int r=(int)req.getAttribute("result");
+		
+		r=r*r;
+		
+		PrintWriter out=res.getWriter();
+		out.println("From squre servlet "+r);
+		
+	}
+}
