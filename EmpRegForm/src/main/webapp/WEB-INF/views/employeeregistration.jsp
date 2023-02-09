@@ -47,7 +47,7 @@
 				</tr>
 
 				<tr>
-					<td><input type="submit" /></td>
+					<td colspan="2"><input type="submit" /></td>
 				</tr>
 			</table>
 

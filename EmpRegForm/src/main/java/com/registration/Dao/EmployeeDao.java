@@ -11,7 +11,7 @@ public class EmployeeDao {
 	static int IdGen=100;
 	public int registerEmployee(Employee employee) throws ClassNotFoundException, SQLException {
 		
-		String Insert_Emp_SQL = "Insert into employeenew"+" (id,first_name,last_name,username,password,address,contact) VALUES " + "(?,?,?,?,?,?,?);";
+		String Insert_Emp_SQL = "insert into employeenew"+" (id,first_name,last_name,username,password,address,contact) VALUES " + "(?,?,?,?,?,?,?)";
 		int result=0;
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		

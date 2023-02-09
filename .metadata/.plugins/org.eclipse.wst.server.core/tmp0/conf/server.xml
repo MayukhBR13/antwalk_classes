@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\MAYUKHR\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\MAYUKHR\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\DemoDynamic2Project" path="/DemoDynamic2Project" reloadable="true" source="org.eclipse.jst.jee.server:DemoDynamic2Project"/><Context docBase="C:\Users\MAYUKHR\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\EmpRegForm" path="/EmpRegForm" reloadable="true" source="org.eclipse.jst.jee.server:EmpRegForm"/></Host>
+      <Context docBase="C:\Users\MAYUKHR\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\MAYUKHR\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\EmpRegForm" path="/EmpRegForm" reloadable="true" source="org.eclipse.jst.jee.server:EmpRegForm"/></Host>
     </Engine>
   </Service>
 </Server>
