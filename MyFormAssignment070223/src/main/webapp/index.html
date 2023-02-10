@@ -3,26 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-	<form action="register" method="post">
+	<div class="container">
+	<form action="register" method="post" align="center" border=2px>
 		<h1>My Form</h1><br>
-		Enter your name:<input type="text" name="name"><br>
-		Enter your password:<input type="password" name="password"><br>
-		Enter your email:<input type="text" name="email"><br>
-		Select Gender: <input type="radio" name="gender" value="Male">Male
-					<input type="radio" name="gender" value="Female">Female<br>
-		Select your course: 
-		<select name="course">
-			<option value="Java">Java</option>
-			<option value="Python">Python</option>
-			<option value="Kotlin">Kotlin</option>
-			<option value="cpp">cpp</option>
-		</select><br>
+		<table align="center">
+		<tr><td>Enter your name:</td><td><input type="text" name="name"><br></td></tr>
+		<tr><td>Enter your password:</td><td><input type="password" name="password"><br></td></tr>
+		<tr><td>Enter your email:</td><td><input type="text" name="email"><br></td></tr>
+		<tr><td>Select Gender:</td><td><input type="radio" name="gender" value="Male">Male
+						<input type="radio" name="gender" value="Female">Female<br></td></tr>
+		<tr><td>Select your course:</td><td> 
+			<select name="course">
+				<option value="Java">Java</option>
+				<option value="Python">Python</option>
+				<option value="Kotlin">Kotlin</option>
+				<option value="cpp">cpp</option>
+			</select><br></td></tr>
+		</table>
 		<input type="checkbox" name="terms">Agree to terms and conditions<br>
 		<input type="submit">	<input type="reset">
 	</form>
-
+	</div>
 </body>
 </html>

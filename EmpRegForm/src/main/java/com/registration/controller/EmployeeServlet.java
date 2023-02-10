@@ -14,7 +14,7 @@ import com.registration.model.Employee;
 
 
 
-@WebServlet("/register")
+@WebServlet("/")
 public class EmployeeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private EmployeeDao employeeDao;

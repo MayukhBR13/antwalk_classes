@@ -93,7 +93,7 @@ Length of string
 
 <!--  assignment 8/2/23 -->
 
-<table border=3>
+<table border=3 align="center">
 <tr>
 <th>Id</th>
 <th>Name</th>

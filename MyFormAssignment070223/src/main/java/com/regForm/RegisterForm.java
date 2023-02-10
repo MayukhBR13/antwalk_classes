@@ -19,7 +19,7 @@ public class RegisterForm extends HttpServlet{
 		PrintWriter out=res.getWriter();
 		//System.out.println("on? "+req.getParameter("terms").toString());
 		if(req.getParameter("terms")==null)
-			out.println("<h1>Welcome to Register Servlet</h1><br>"+"you have not accepted terms");
+			out.println("<h1>Welcome to Register Servlet</h1><br>"+"<b>you have not accepted terms</b>");
 		else //if(req.getParameter("terms").equals("on")) 
 		{
 			String result="<h1>Welcome to Register Servlet</h1><br>"+
