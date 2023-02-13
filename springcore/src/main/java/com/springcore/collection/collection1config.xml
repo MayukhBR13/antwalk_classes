@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.springcore.collection.Emp" name="emp1">
+		<property name="name"><value>Mayukh</value></property>
+		<property name="phones">
+			<list>
+				<value>1234567890</value>
+				<value>1239877890</value>
+			</list>
+		</property>
+		<property name="addresses">
+			<set>
+				<value>Kolkata</value>
+				<value>Mumbai</value>
+			</set>
+		</property>
+		<property name="courses">
+		<map>
+			<entry key="1" value="co"/>
+			<entry key="2" value="dsa"/>
+		</map>
+		</property>
+	</bean>
+	<bean class="com.springcore.collection.Emp" name="emp2">
+		<property name="name"><value>May</value></property>
+		<property name="phones">
+			<list>
+				<value>123456</value>
+				<value>123987</value>
+			</list>
+		</property>
+		<property name="addresses">
+			<set>
+				<value>Kol</value>
+				<value>Mum</value>
+			</set>
+		</property>
+		<property name="courses">
+		<map>
+			<entry key="1" value="ca"/>
+			<entry key="2" value="oop"/>
+		</map>
+		</property>
+	</bean>
+
+
+</beans>
