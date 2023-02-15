@@ -1,7 +1,0 @@
-package com.regForm;
-
-import javax.servlet.http.HttpServlet;
-
-public class RegisterForm extends HttpServlet{
-
-}
