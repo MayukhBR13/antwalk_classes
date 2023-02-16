@@ -2,6 +2,7 @@ package com.map.many;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -63,19 +64,19 @@ public class MApMAnyDemo {
 //			query1 -> input empid -> projects
 //			query2 -> input projectid -> emps;
 			
-			/*
-			 * Scanner in = new Scanner(System.in); System.out.println("Enter empid : ");
-			 * 
-			 * Emp e = (Emp) s.get(Emp.class, in.nextInt()); if(e != null) { List<Project>
-			 * projects = e.getProjects(); for(Project proj : projects) {
-			 * System.out.println(proj.getPid() + " " + proj.getProjectName()); } } else {
-			 * System.out.println("Wrong emp name"); }
-			 * 
-			 * System.out.println("Enter pid : "); Project p = (Project)
-			 * s.get(Project.class, in.nextInt()); if(p != null) { List<Emp> employees =
-			 * p.getEmps(); for(Emp emp : employees) { System.out.println(emp.getId() + " "
-			 * + emp.getName()); } } else { System.out.println("Wrong project name"); }
-			 */
+			
+			  Scanner in = new Scanner(System.in); System.out.println("Enter empid : ");
+			  
+			  Emp e = (Emp) s.get(Emp.class, in.nextInt()); if(e != null) { List<Project>
+			  projects = e.getProjects(); for(Project proj : projects) {
+			  System.out.println(proj.getPid() + " " + proj.getProjectName()); } } else {
+			  System.out.println("Wrong emp name"); }
+			  
+			  System.out.println("Enter pid : "); Project p = (Project)
+			  s.get(Project.class, in.nextInt()); if(p != null) { List<Emp> employees =
+			  p.getEmployees(); for(Emp emp : employees) { System.out.println(emp.getId() + " "
+			  + emp.getName()); } } else { System.out.println("Wrong project name"); }
+			 
 			tx.commit();
 			s.close();
 			
