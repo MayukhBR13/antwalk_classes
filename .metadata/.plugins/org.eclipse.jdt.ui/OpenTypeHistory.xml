@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=springjdbcDemo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.jdbcDemo.springjdbcDemo.dao{StudentDao.java[StudentDao" modifiers="513" timestamp="1676450610506"/>
+    <typeInfo handle="=springmvcProject/C:\/Users\/MAYUKHR\/.m2\/repository\/org\/springframework\/spring-jdbc\/5.2.4.RELEASE\/spring-jdbc-5.2.4.RELEASE.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.archivename=/spring-jdbc-5.2.4.RELEASE.jar=/=/maven.groupId=/org.springframework=/=/maven.artifactId=/spring-jdbc=/=/maven.version=/5.2.4.RELEASE=/=/maven.scope=/compile=/=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/&lt;org.springframework.jdbc.core(RowMapper.class[RowMapper" modifiers="1537" timestamp="1676524729066"/>
 </typeInfoHistroy>

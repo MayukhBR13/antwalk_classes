@@ -2,9 +2,12 @@ package com.springmvcProject.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,9 +29,20 @@ public class EmplController {
 	
 	//ModelAttribute-> req. data is put into model obj
 	@RequestMapping(value="/save",method=RequestMethod.POST)
-	public String save(@ModelAttribute("empl") Empl empl) {
-		emplDao.save(empl);
-		return "redirect:/viewemp";
+	public String save(@Valid @ModelAttribute("empl") Empl empl,BindingResult br,Model m) {
+//		if(br.hasErrors()){
+//			return "emplform";
+//		}
+//		else {
+//			m.addAttribute("empl",empl);
+//			return "display";
+			emplDao.save(empl);
+			return "redirect:/viewform";
+//		}
+		
+		
+		
+		
 	}
 
 	@RequestMapping(value="/editempl/{id}")
@@ -46,16 +60,17 @@ public class EmplController {
 		return "viewform";
 	}
 	
-	@RequestMapping(value="/editsave",method=RequestMethod.POST)
+	@RequestMapping(value="/editempl/editsave",method=RequestMethod.POST)
 	public String editsave(@ModelAttribute("empl") Empl empl)
 	{
 		emplDao.update(empl);
-		return "redirect:/viewempl";
+		return "redirect:/viewform";
 	}
 	
-	@RequestMapping(value="/deleteempl/{id}",method=RequestMethod.POST)
+	@RequestMapping(value="/deleteempl/{id}",method=RequestMethod.GET)
 	public String delete(@PathVariable int id) {
+		//System.out.println(id);
 		emplDao.delete(id);
-		return "redirect:/viewempl";
+		return "redirect:/viewform";
 	}
 }

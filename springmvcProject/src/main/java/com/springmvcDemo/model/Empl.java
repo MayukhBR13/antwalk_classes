@@ -1,9 +1,15 @@
 package com.springmvcDemo.model;
 
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Positive;
+import javax.validation.constraints.PositiveOrZero;
 
 public class Empl {
+	@Positive(message = "ID should be Positive")
 	private int id;
+	@Pattern(regexp="[a-zA-Z0-9]")
 	private String name;
+	@PositiveOrZero(message = "Salary should be Positive")
 	private float salary;
 	private String designation;
 	

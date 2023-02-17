@@ -11,7 +11,7 @@
 	http://www.springframework.org/schema/util
     http://www.springframework.org/schema/util/spring-util.xsd">
 	
-	<context:component-scan base-package="com.springcore.assignment140223"></context:component-scan>
+	<context:component-scan base-package="com.springcore.assignment140223"/>
 
 	<util:list list-class="java.util.ArrayList" id="clist">
 	<value>1236547889</value>

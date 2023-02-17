@@ -6,7 +6,7 @@
 <form:form method="post" action="editsave">
 	<table>
 		<tr>
-			<td><form:hidden path="id"/></td>
+			<td><form:input path="id" /></td>
 		</tr>
 		<tr>
 			<td>Enter Updated Name:</td>

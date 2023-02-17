@@ -27,11 +27,11 @@ public class EmplDao {
 	}
 	public int update(Empl e) {
 		//update
-		int i=(int)this.jdbcTemplate.update("update empl set name=?,salary=?,designation=? where id=?)", e.getName(),e.getSalary(),e.getDesignation(),e.getId());
+		int i=(int)this.jdbcTemplate.update("update empl set name=?,salary=?,designation=? where id=?", e.getName(),e.getSalary(),e.getDesignation(),e.getId());
 		return i;
 	}
 	public int delete(int id) {
-		int i=(int)this.jdbcTemplate.update("delete from empl where id=?)", id);
+		int i=(int)this.jdbcTemplate.update("delete from empl where id=?", id);
 		return i;
 		//update
 		
