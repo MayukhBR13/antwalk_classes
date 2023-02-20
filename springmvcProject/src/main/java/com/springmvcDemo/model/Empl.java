@@ -4,10 +4,14 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
 import javax.validation.constraints.PositiveOrZero;
 
+import jakarta.persistence.Entity;
+
+@Entity
 public class Empl {
+	
 	@Positive(message = "ID should be Positive")
 	private int id;
-	@Pattern(regexp="[a-zA-Z0-9]")
+	//@Pattern(regexp="[a-zA-Z0-9]")
 	private String name;
 	@PositiveOrZero(message = "Salary should be Positive")
 	private float salary;

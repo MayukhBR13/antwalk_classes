@@ -23,22 +23,28 @@ public class EmplController {
 	
 	@RequestMapping("/emplform")
 	public String showForm(Model m) {
-		m.addAttribute("command",new Empl());
+		Empl empl=new Empl();
+		m.addAttribute("command",empl);
+
+		m.addAttribute("empl",empl);
 		return "emplform";
 	}
 	
 	//ModelAttribute-> req. data is put into model obj
 	@RequestMapping(value="/save",method=RequestMethod.POST)
 	public String save(@Valid @ModelAttribute("empl") Empl empl,BindingResult br,Model m) {
-//		if(br.hasErrors()){
-//			return "emplform";
-//		}
-//		else {
-//			m.addAttribute("empl",empl);
+		if(br.hasErrors()){
+
+			m.addAttribute("command",empl);
+			System.out.println("error in data");
+			return "emplform";
+		}
+		else {
+			m.addAttribute("empl",empl);
 //			return "display";
 			emplDao.save(empl);
 			return "redirect:/viewform";
-//		}
+		}
 		
 		
 		
